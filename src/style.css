@@ -14,8 +14,10 @@
   }
 
 body {
-    /* background: royalblue; */
+    background-image: url(./restaurant.png);
+    background-size: 120%; 
     margin: 0;
+    padding: 0;
 }
 
 #content {
@@ -26,43 +28,52 @@ body {
 }
 
 #header {
+    cursor: default;
     font-family: 'Shadows Into Light', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: larger;
+    font-size: 1.5rem;
+    width: 100%;
+    text-align: center;
+    background: #e9ff9040;
+}
+
+#headerText {
+    padding: 0;
+    margin: 0;
 }
 
 #main {
+    background: #ff90e921;
     width: 100%;
-    background: #ff90e94b;
+    height: max-content;
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 1rem;
 }
 
 #nav {
-    padding: 2%;
-    width: max-content;
-    display: flex;
-    flex-direction: row;
-    gap: min(3rem, 20vw);
-
+    width: 90%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5%;
+    justify-content: space-around;
 }
 
 #nav > button {
     font-family: 'Aref Ruqaa Ink', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     outline: 0;
-    grid-gap: 8px;
     align-items: center;
-    background-color: #ff90e8;
+    background-color: #ff90e9ca;
     color: #000;
     border: 1px solid #000;
-    border-radius: 4px;
+    border-radius: 5px;
     cursor: pointer;
     display: inline-flex;
     flex-shrink: 0;
-    font-size: 16px;
+    font-size: 20px;
     gap: 8px;
     justify-content: center;
-    line-height: 0.3;
+    line-height: 1;
     overflow: hidden;
     padding: 10px 20px;
     padding-top: 5px;
@@ -72,7 +83,7 @@ body {
     white-space: nowrap;
 }
 
-#nav >button:hover {
+#nav > button:hover {
     box-shadow: 4px 4px 0 #000;
     transform: translate(-4px,-4px);
 }
@@ -81,6 +92,166 @@ body {
     outline-offset: 1px;
 }
 
-#footer {
-    font-size: smaller;
+#nav > button:active {
+    box-shadow: 2px 2px 0 #000;
+    transform: translate(-2px,-2px);
+}
+
+#wrapper, #preview {
+    margin-top: 2rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: azure;
+    background: rgba(0, 0, 0, 0.350);
+    width: 80%;
+    height: fit-content;
+    padding: 2rem;
+    flex-wrap: wrap;
+    border-radius: 5px;
+}
+
+#wrapper:hover, #preview:hover, footer:hover {
+    cursor: default;
+    background: rgba(0, 0, 0, 0.500);
+}
+
+#details {
+    align-items: flex-start !important;
+    font-size: 2rem;
+}
+
+#main-img {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#preview {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+ 
+#preview > div {
+    aspect-ratio: 1/1;
+}
+
+#previewImage-1, #previewImage-2, #previewImage-3 {
+    min-width: 250px;
+    min-height: 250px;
+}
+
+#previewImage-1 {
+    background-image: url(./previewImage-1.png);
+    background-size: cover;
+}
+
+#previewImage-2 {
+    background-image: url(./previewImage-2.png);
+    background-size: cover;
+}
+
+#previewImage-3 {
+    background-image: url(./previewImage-3.png);
+    background-size: cover;
+}
+
+#menu-wrapper {
+    width: 90%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+#food-1{
+    background-image: url(./food-1.png);
+    background-size: cover;
+}
+
+#food-2{
+    background-image: url(./food-2.png);
+    background-size: cover;
+}
+
+#food-3{
+    background-image: url(./food-3.png);
+    background-size: cover;
+}
+
+#food-4{
+    background-image: url(./food-4.png);
+    background-size: cover;
+}
+
+#food-5{
+    background-image: url(./food-5.png);
+    background-size: cover;
+}
+
+#food-6{
+    background-image: url(./food-6.png);
+    background-size: cover;
+}
+
+#food-7{
+    background-image: url(./food-7.png);
+    background-size: cover;
+}
+
+#food-8{
+    background-image: url(./food-8.png);
+    background-size: cover;
+}
+
+#food-1, #food-2, #food-3, #food-4, #food-5, #food-6, #food-7, #food-8 {
+    min-width: 250px;
+    min-height: 250px;
+}
+
+#food-1:hover, #food-2:hover, #food-3:hover, #food-4:hover, #food-5:hover, #food-6:hover, #food-7:hover, #food-8:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+footer {
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 20px;
+    font-size: 2rem;
+    background: rgba(0, 0, 0, 0.350);
+}
+
+a:link, a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+#credits {
+    background: rgba(0, 0, 0, 0.350);
+    opacity: 95%;
+    padding: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    box-shadow: var(--box-shadow);
+}
+
+#credits:hover {
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.113); 
+    animation: rotate 1s ease-in-out;
+    animation-delay: 0.5s;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotateZ(0deg);
+    }
+    to {
+        transform: rotateZ(359deg);
+    }
 }
