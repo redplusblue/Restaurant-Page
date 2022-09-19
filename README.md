@@ -1,5 +1,5 @@
 # Restaurant - Page
-### A dynamic Restaurant-Page made using JS/CSS, using webpack, an exercise for [TheOdinProject](theodinproject.com)
+### A dynamic Restaurant-Page made using JS/CSS, an exercise for [TheOdinProject](theodinproject.com)
 #### Click on the picture/the link below to try!
 
 <a href="https://redplusblue.github.io/Restaurant-Page/"><img src="files/preview.png" alt="A preview picture" title="Click Me!"></a>
