@@ -119,7 +119,7 @@ body {
 }
 
 #details {
-    align-items: flex-start !important;
+    text-align: center;
     font-size: 2rem;
 }
 
@@ -234,18 +234,43 @@ a:link, a:visited {
 }
 
 #credits {
+    position: absolute;
+    bottom: 30px;
+    color: white;
     background: rgba(0, 0, 0, 0.350);
-    opacity: 95%;
     padding: 10px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     box-shadow: var(--box-shadow);
 }
 
+#credits > a{
+    color: aliceblue;
+}
+
 #credits:hover {
     cursor: pointer;
-    background: rgba(0, 0, 0, 0.113); 
+    background: rgba(0, 0, 0, 0.250); 
     animation: rotate 1s ease-in-out;
     animation-delay: 0.5s;
+}
+
+#source {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    color: white;
+    background: rgba(0, 0, 0, 0.350);
+    padding: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    box-shadow: var(--box-shadow);
+}
+
+#contact-image {
+    min-width: 250px;
+    min-height: 250px;
+    aspect-ratio: 1/1;
+    background-image: url(./contact.png);
+    background-size: cover;
 }
 
 @keyframes rotate {

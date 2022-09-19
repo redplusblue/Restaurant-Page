@@ -1,7 +1,6 @@
 import { eventListeners } from "./index.js";
 
 export default function setLayout(){
-    console.log('Setting layout...');
     const content = document.createElement('div');
     const header = document.createElement('header');
     const main = document.createElement('main');
@@ -54,7 +53,7 @@ export const setPage = (button) => {
     } else if (button == 'menu') {
         menuPage();
     } else if (button == 'contact') {
-        alert("Contact");
+        contactPage();
     }
 }
 
@@ -85,10 +84,6 @@ function homePage(){
     const footer = document.createElement('footer');
     footer.innerText = 'The food is completely real.';
     content.appendChild(footer);
-    // const credits = document.createElement('div');
-    // credits.id = 'credits';
-    // credits.innerHTML = '<a href="https://github.com/redplusblue" target="_blank" rel="noopener noreferrer"><div>Made by Samir</div></a>';
-    // content.appendChild(credits);
 }; 
 
 function menuPage(){
@@ -129,3 +124,25 @@ function menuPage(){
     content.appendChild(footer);
 }
 
+function contactPage(){
+    const content = document.getElementById('content');
+    const wrapper = document.createElement('div');
+    wrapper.id = 'wrapper';
+    wrapper.innerText = 'Contact';
+    content.appendChild(wrapper);
+    const details = document.createElement('div');
+    const image = document.createElement('div');
+    image.id = 'contact-image';
+    wrapper.appendChild(image);
+    details.id = 'details';
+    details.innerHTML = 'We are located at 123 Fake Street.<br>You can call us at 123-456-7890.<br>You can also email us at fake@fake-email.com';
+    wrapper.appendChild(details);
+    const credits = document.createElement('div');
+    credits.id = 'credits';
+    credits.innerHTML = '<a href="https://github.com/redplusblue" target="_blank" rel="noopener noreferrer"><div>Made by Samir</div></a>';
+    content.appendChild(credits);
+    const source = document.createElement('div');
+    source.id = 'source';
+    source.innerHTML = 'Image credit: Pinterest, Fonts: Google Fonts'
+    content.appendChild(source);
+}
