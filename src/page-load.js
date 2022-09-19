@@ -13,7 +13,7 @@ export default function setLayout(){
     setHeader();
     setMain();
     eventListeners();
-};
+}
 
 export function clearPage(){
     document.body.innerHTML = '';
