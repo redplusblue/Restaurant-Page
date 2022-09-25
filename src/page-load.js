@@ -143,6 +143,6 @@ function contactPage(){
     content.appendChild(credits);
     const source = document.createElement('div');
     source.id = 'source';
-    source.innerHTML = 'Image credit: Pinterest, Fonts: Google Fonts'
+    source.innerHTML = 'Image credit: <a href="https://www.pinterest.com/" target="_blank" rel="noopener noreferrer">Pinterest</a>, Fonts: <a href="https://fonts.google.com/about" target="_blank" rel="noopener noreferrer">Google Fonts</a>'
     content.appendChild(source);
 }

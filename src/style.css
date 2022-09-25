@@ -255,6 +255,7 @@ a:link, a:visited {
 }
 
 #source {
+    cursor: default;
     position: absolute;
     bottom: 30px;
     right: 30px;
@@ -263,6 +264,10 @@ a:link, a:visited {
     padding: 10px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     box-shadow: var(--box-shadow);
+}
+
+#source:hover {
+    background: rgba(0, 0, 0, 0.250);
 }
 
 #contact-image {

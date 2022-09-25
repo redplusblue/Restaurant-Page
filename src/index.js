@@ -36,5 +36,5 @@ document.getElementById('contactButton').addEventListener('click', () => {
 });
 };
 
-console.log('Begin!');
 setLayout();
+document.getElementById('homeButton').click();
